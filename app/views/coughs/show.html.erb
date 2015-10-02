@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @cough.type %>
+</p>
+
+<p>
+  <strong>Frequency:</strong>
+  <%= @cough.frequency %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @cough.age %>
+</p>
+
+<%= link_to 'Edit', edit_cough_path(@cough) %> |
+<%= link_to 'Back', coughs_path %>

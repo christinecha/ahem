@@ -1,0 +1,2 @@
+module CoughsHelper
+end

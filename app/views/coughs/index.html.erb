@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Coughs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Frequency</th>
+      <th>Age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coughs.each do |cough| %>
+      <tr>
+        <td><%= cough.type %></td>
+        <td><%= cough.frequency %></td>
+        <td><%= cough.age %></td>
+        <td><%= link_to 'Show', cough %></td>
+        <td><%= link_to 'Edit', edit_cough_path(cough) %></td>
+        <td><%= link_to 'Destroy', cough, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cough', new_cough_path %>
