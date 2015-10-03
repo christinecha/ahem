@@ -15,6 +15,7 @@ class CoughsController < ApplicationController
   # GET /coughs/new
   def new
     @cough = Cough.new
+    
   end
 
   # GET /coughs/1/edit
