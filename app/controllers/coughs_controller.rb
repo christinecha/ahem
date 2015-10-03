@@ -10,12 +10,12 @@ class CoughsController < ApplicationController
   # GET /coughs/1
   # GET /coughs/1.json
   def show
+    @cough = Cough.find(params[:id])
   end
 
   # GET /coughs/new
   def new
     @cough = Cough.new
-    
   end
 
   # GET /coughs/1/edit
@@ -26,7 +26,6 @@ class CoughsController < ApplicationController
   # POST /coughs.json
   def create
     @cough = Cough.new(cough_params)
-
     respond_to do |format|
       if @cough.save
         format.html { redirect_to @cough, notice: 'Cough was successfully created.' }
