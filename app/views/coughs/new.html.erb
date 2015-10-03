@@ -1,28 +1,29 @@
 <div class="home">
-    <%= form_for(@cough) do |f| %>
+  <%= form_for(@cough) do |f| %>
 
-  <div class="screen">
-    <div id="visualizer">
+    <div class="screen">
+      <div id="visualizer">
+      </div>
+      <div class="caption">
+        <p><strong>TAP GREEN BUTTON TO RECORD</strong></p>
+      </div>
+      <div class="question" >
+        <h2>How frequently are you coughing?</h2>
+          <select class="question-frequency">
+            <option value="0">Rarely</option>
+            <option value="1">A few times a day</option>
+            <option value="2">A few times per hour</option>
+            <option value="3">All the time</option>
+          </select>
+        <%= f.hidden_field :frequency %>
+      </div>
     </div>
-    <div class="question" >
-      <h2>How frequently are you coughing?</h2>
-        <select>
-          <option value="0">Rarely</option>
-          <option value="1">A few times a day</option>
-          <option value="2">A few times per hour</option>
-          <option value="3">All the time</option>
-        </select>
-      <%= f.hidden_field :frequency %>
+
+    <div class="record-button">
     </div>
-  </div>
+    <div class="stop-record">
+    </div>
 
-  <div class="record-button">
-  </div>
-  
-
-  <div class="record-button--caption">
-    <p><strong>TAP GREEN BUTTON TO RECORD</strong></p>
-  </div>
 
   <% end %>
 
