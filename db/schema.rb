@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151002224922) do
+ActiveRecord::Schema.define(version: 20151003141631) do
 
   create_table "coughs", force: :cascade do |t|
     t.string   "type"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20151002224922) do
     t.integer  "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "severity"
+    t.string   "audio_file"
   end
 
 end

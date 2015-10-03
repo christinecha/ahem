@@ -19,6 +19,16 @@
     margin-bottom: 10px;
   }
 
+  .record-button:active {
+    background-color: #94c284;
+  }
+
+  #defaultCanvas {
+    position: absolute !important;
+    z-index: 100;
+    top: 100px !important;
+    left: 30px;
+  }
 
 
 }
