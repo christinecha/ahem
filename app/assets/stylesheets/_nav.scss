@@ -1,0 +1,24 @@
+.nav {
+  background-color: #a5d395;
+  height: 60px;
+
+  .logo {
+    height: 40px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: inline-block;
+    float: right;
+    margin: 10px;
+    .hamburger-bar {
+      background-color: white;
+      height: 5px;
+      width: 30px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+  }
+
+}
