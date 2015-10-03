@@ -5,7 +5,6 @@ var drawing = 0;
 
 function setup() {
 
-  console.log("hello");
   var button = document.getElementsByClassName("record-button")[0];
   var clickedButton = new p5.Element(button);
   clickedButton.mousePressed(onMousePress);
@@ -54,7 +53,7 @@ function draw() {
 
 function onMousePress() {
   // use the '.enabled' boolean to make sure user enabled the mic (otherwise we'd record silence)
-  console.log("hello");
+
   if (state === 0 && mic.enabled) {
     drawing ++;
     // Tell recorder to record to a p5.SoundFile which we will use for playback
